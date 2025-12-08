@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.13.0/dist/maplibre-gl.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.1.1/lib/p5.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "animejs": "./node_modules/animejs/dist/bundles/anime.esm.min.js",
+          "chart.js/auto": "https://cdn.jsdelivr.net/npm/chart.js",
+          "@kurkle/color": "./node_modules/@kurkle/color/dist/color.esm.js",
+          "tone.js": "https://esm.sh/tone@15.1.22",
+          "maplibre-gl": "https://esm.sh/maplibre-gl@5.13.0",
+          "typed.js": "./node_modules/typed.js/dist/typed.module.js",
+          "tone-visualizer": "./node_modules/tone-visualizer/dist/visualizer.esm.js",
+          "zzz": "https://esm.sh/zdog"
+        }
+      }
+    </script>
+    <script type="module" src="src/js/script.js"></script>
+    <script type="module" src="src/js/chartjs.js"></script>
+    <script type="module" src="src/js/tonejs.js"></script>
+    <script type="module" src="src/js/mapLibre.js"></script>
+    <script type="module" src="src/js/typedjs.js"></script>
+    <script type="module" src="./src/js/zdog.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
+    <script type="module" src="./src/js/anime.js"></script>
+
+    <script src="src/js/bootstrap.js" defer></script>
+  </head>
+  <body>
+
+    <div id="map-wrapper">
+      <div id="carte" class="position-absolute top-0 start-0"></div>
+      <div id="gradient" class="position-absolute top-0 start-0"></div>
+    </div>
+    <div id="bg-darkness" class="position-absolute top-0 start-0"></div>
+
+
+    <div id="hud-container" class="position-absolute top-0 start-0 p-4">
+
+      <div class="hud-element chart-container">
+        <canvas id="graphique"></canvas>
+      </div>
+
+      <div class="hud-element animejs-container">
+        <div class="switch-container">
+          <div class="switch-box">
+            <div class="switch"></div>
+          </div>
+          <div class="switch-box">
+            <div class="switch"></div>
+          </div>
+          <div class="switch-box">
+            <div class="switch"></div>
+          </div>
+          <div class="switch-box">
+            <div class="switch"></div>
+          </div>
+        </div>
+        <div class="wheel-container">
+          <div class="wheel">
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hud-element">
+        <p>
+          <span id="typedjs-elem"></span>
+        </p>
+      </div>
+
+      <div id="hud-corner">
+        <div></div>
+
+        <div class="hud-element">
+          <canvas class="zdog-canvas"></canvas>
+        </div>
+
+        <div></div>
+
+        <div class="hud-element">
+          <div class="visualizer"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
+
