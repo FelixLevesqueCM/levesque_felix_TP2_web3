@@ -105,3 +105,10 @@
 .visualizer {
     height: 100%;
 }
+
+.typedjs {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: "Source Code Pro", monospace;
+}

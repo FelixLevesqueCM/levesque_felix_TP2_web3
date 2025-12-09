@@ -19,3 +19,7 @@ let options = {
 };
 
 new Chart(ctx, options);
+
+//chart placeholder
+
+//J'ai tout essayé, mais le tableau ne s'est jamais affiché

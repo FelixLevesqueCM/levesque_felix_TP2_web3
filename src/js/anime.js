@@ -13,3 +13,5 @@ animate('.line', {
     loopDelay: () => utils.random(250, 500, 1000),
     loop: true,
 });
+
+//Je ne sais pas pourquoi, mais les animations ne fonctionnent pas
